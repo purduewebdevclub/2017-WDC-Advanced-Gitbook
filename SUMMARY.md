@@ -1,3 +1,3 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [First Chapter](meeting-1/meeting-1.md)
