@@ -107,3 +107,10 @@ So a few things are going on here:
     i. `use` is the loader that webpack will use to transform your files. Loaders transform files
     ii. `test` is the regex matcher
 4. HtmlWebpackPlugin generates the index.html with the script tag injected so I don't have to create one
+
+## Installing Webpack
+* `npm install -g webpack` or `sudo npm install -g webpack` on *nix machines
+* Create a webpack.config.js
+* `npm init # If npm hasn't been initialized yet`
+* `npm install --save webpack babel-loader babel-presets-es2015`
+* `webpack`
