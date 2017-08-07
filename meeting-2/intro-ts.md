@@ -51,6 +51,38 @@ This can be abused by using the `any` type, but should only be used in specific 
 
 Note: TypeScript has all of the same features ES2015 does such as classes, arrow functions, `let`, etc.
 
+## Integrating with webpack
+Let's start with the same `webpack.config.js` we used last time.
+``` typescript
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require("path");
+module.exports = {
+    entry: './src/app.ts', //changed to .ts
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
+            },
+            { // Added this rule
+                test: /\.ts$/,
+                use: 'awesome-typescript-loader', // new loader for different type of file
+                exclude: /node_modules/
+            }
+        ]
+    },
+    resolve: {
+        extensions: [".js", ".ts"]
+    },
+    plugins: [new HtmlWebpackPlugin()]
+}
+```
+
 ### Methods
 ```typescript
 class Car {
@@ -153,3 +185,16 @@ class Person {
 **Note: when referring to local modules you've created, use relative paths such as `./` or `../`. 
 If the modules are from `npm`, you need to use the package name.
 If there's no relative path, your module loader will assume it's from `node_modules`.
+
+
+## Module Systems
+There are different types of module loaders:
+* SystemJS
+* AMD
+* CommonJS
+* Webpack
+
+This part itself would be a lesson, and it's not the most important thing in web development, so we're just going to summarize: 
+NPM uses CommonJS. WebPack supports CommonJS and AMD. All of the module loaders load a slightly different way and deal with module importing/exporting differently.
+
+When you do `import { x } from './some-file';` you're actually using a module system. Depending on which module loader you define, Webpack will treat that line of code differently.
