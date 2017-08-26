@@ -1,0 +1,12 @@
+<h1 class="text-center">
+  {{title}}
+</h1>
+<div class="row">
+  <div *ngFor="let character of characters | async" class="card col-md-3 col-sm-6" [ngClass]="!character.alive ? 'dead' : character.house" style="width: 30rem;">
+    <img class="card-img-top" [src]="character.image" height="500rem">
+    <div class="card-body">
+      <h4 class="card-title"> {{ character.name }} </h4>
+    </div>
+  </div>
+</div>
+<pre> {{ characters | async | json }} </pre>
