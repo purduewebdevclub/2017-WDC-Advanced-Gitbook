@@ -8,7 +8,7 @@ export class MainService {
   ];
   constructor() { }
   getVillains() {
-    return Object.assign({}, this.villains);
+    return this.villains.slice();
   }
   addVillain(villain) {
     this.villains.push(villain);
