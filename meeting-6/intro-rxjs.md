@@ -117,7 +117,9 @@ constructor(private characterService: CharacterService) {
 ```
 ```html
 <!--app.component.html-->
+{% raw %}
 <pre> {{ characters | async | json }} </pre>
+{% endraw %}
 ```
 
 ### The Async Filter/Pipe
@@ -143,7 +145,9 @@ The above gets the observable for the HTTP Request, then when an event has been 
 
 ```html
 <!--app.component.html-->
+{% raw %}
 <pre> {{characters | json }} </pre>
+{% endraw %}
 ```
 
 

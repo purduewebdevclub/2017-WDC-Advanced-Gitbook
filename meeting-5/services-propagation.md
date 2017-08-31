@@ -102,10 +102,14 @@ export class VillainListComponent implements OnInit {
 
 }
 ```
+
 ```html
 <!-- villain-list/villain-list.component.html -->
+{% raw %}
 <pre>{{villains | json}}</pre>
+{% endraw %}
 ```
+
 
 **Note: Don't forget to REMOVE this from `app.component.html`**
 ` [villains]="initialVillains" `
