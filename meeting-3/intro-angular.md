@@ -141,7 +141,7 @@ export class UserComponent {
 ```
 This is helpful for many reasons, but the main one is that you don't need to manually update your template through your TypeScript.
 
-Also, the `{{}}` syntax is for binding. This means that that part of the template is *bound to* that variable in the Component class. In other words, when `userName` changes at any point, the header updates.
+Also, the {{}} syntax is for binding. This means that that part of the template is *bound to* that variable in the Component class. In other words, when `userName` changes at any point, the header updates.
 
 ```typescript
 @Component({
