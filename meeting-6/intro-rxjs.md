@@ -146,5 +146,34 @@ The above gets the observable for the HTTP Request, then when an event has been 
 <pre> {{characters | json }} </pre>
 ```
 
+
+### NgClass
+We can conditionally apply classes to our elements by using the directive `NgClass`. `NgClass` uses your logic to determine what class to use. 
+You just need to make sure you return the right one.
+For example, if I had a series of game of thrones characters and I wanted to change the colors of those who are dead, then you would use something like:
+`[ngClass]="{ 'dead': !character.alive }`
+`dead` is the class name. `!character.alive` is the condition on which to check to determine whether the class should be applied or not.
+or, if I had a ternary operator
+`[ngClass]="character.alive ? 'alive' : 'dead'"`
+
+**Note how I used quotes around `alive` and `dead`. If I didn't, Angular would have tried to evaluate and find both of those variables and use their result as the class name**
+
+
+## Using Bootstrap
+1. `npm install bootstrap --save`
+2. Open styles.css and add `@import '~bootstrap/dist/css/bootstrap.css';`
+3. Start using bootstrap!
+**Note: I am using bootstrap 4.0.0-beta, to install this use `npm install bootstrap@4.0.0-beta`**
+4. To use javascript you can:
+```typescript
+import 'jquery';
+import 'bootstrap'; // import all of bootstrap's js
+import 'bootstrap/js/dist/util'; // import a specific util
+```
+And install jquery `npm install --save jquery`
+
 ## Workshop
-Iterate over the list of characters and show each character's name and house and display their image.
+* Iterate over the list of characters and show each character's name and house
+* Display each character's image
+* Change the style of each character who is dead vs alive
+* BONUS: Change the style of each character to match their house

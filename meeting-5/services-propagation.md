@@ -172,6 +172,12 @@ We have a list of villains, and we want to display each item in the list, so:
 ```
 Do you know why we used `NgFor` on the `li` and not the `ul`? It's because if we put `ngFor` on the `ul`, then the `ul` would be copied multiple times, so for each item in the array, we'd have a new list, but we want a list item for each item in the array. That's why we chose to put the `NgFor` on the `li` and not the `ul`
 
+### Brackets vs parentheses
+Brackets are used when you'd like to evaluate something. For example, when we pass `characters` or some object, we want to be able to pass in the 
+evaluated data, right? Not the actual word `characters`, so when we're passing data, we need to make sure to put `[]` around the attribute name.
+
+Also, `()` means some kind of event being passed or created. For us, we're doing method linking for click events and passing data from child to parent, so we use `()`.
+
 ## Services
 The purpose of components are to make sure you can reuse UI segments of your web application.
 However, it's not a good idea to put large pieces of logic in these components.

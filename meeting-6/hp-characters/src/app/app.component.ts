@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 
 import { CharacterService } from './character.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
