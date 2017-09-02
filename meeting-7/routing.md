@@ -123,7 +123,9 @@ By using the elvis operator, we are able to tell Angular "if this exists, I want
 
 So, let's add the title of the character
 ```html
+    {% raw %}
     <h3 class="card-title"> {{ (character | async)?.name}} </h3>
+    {% endraw %}
 ```
 **Note: you need to have parentheses around your expression that you want to get the object from. Because we want `name` from the result of the `async` pipe, we have parentheses around the `character | async`**
 
