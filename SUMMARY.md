@@ -6,3 +6,4 @@
 * [Complex Angular components](meeting-4/components-advanced.md)
 * [Propagation of data and Intro to Services](meeting-5/services-propagation.md)
 * [Observables & HTTP](meeting-6/intro-rxjs.md)
+* [Client-Side Routing](meeting-7/routing.md)

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.css';
+
+.dead {
+    background: #F44336;
+    color: white;
+}
+
+.Gryffindor {
+    background: #EF9A9A;
+    color: white;
+}
+
+.Slytherin {
+    background: #A5D6A7;
+    color: white;
+}
+
+.Ravenclaw {
+    background: #CE93D8;
+    color: white;
+}
+
+.Hufflepuff {
+    background: #FFC107;
+}
