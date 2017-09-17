@@ -1,6 +1,11 @@
 # Introduction & Build Systems
 Welcome to the advanced track! There's a lot of material to cover, but lucky for you, we chopped it up into 7 action-packed lessons!
 
+# Prerequisites
+1. Install a code editor i.e. [Visual Studio Code](https://code.visualstudio.com/)
+2. Install [Nodejs](https://nodejs.org/en/)
+3. Install Google Chrome (if not already installed)
+
 ## What will we learn?
 Each week is a new set of topics. A large majority will focus on Angular 4.
 
