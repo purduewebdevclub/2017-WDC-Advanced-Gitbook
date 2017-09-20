@@ -119,3 +119,7 @@ So a few things are going on here:
 * `npm init # If npm hasn't been initialized yet`
 * `npm install --save webpack babel-loader babel-presets-es2015`
 * `webpack`
+
+
+## Workshop
+Use the `css-loader` on your project with webpack!

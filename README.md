@@ -2,6 +2,8 @@
 
 This is the Gitbook for the Web Dev Club's 2017 Advanced Track!
 
+[GitHub page for the source code](https://github.com/purduewebdevclub/2017-WDC-Advanced-Gitbook)
+
 ## Tentative Topics
 * Build Systems
 * TypeScript/Modules
@@ -29,4 +31,3 @@ Good question. Showing up to the lessons gives you:
 * Ability to ask for help
 * Presentation provided by our best instructors
 
-Currently still WIP.
